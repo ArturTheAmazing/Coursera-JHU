@@ -1,0 +1,97 @@
+* {
+    font-family: "Times New Roman", "Times", serif;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+
+h1 {
+    text-align: center;
+    font-size: 175%;
+}
+
+div, section {
+    border: 1px solid black;
+    padding: 0 10px 0 10px;
+}
+
+div {
+    position: relative;
+    height: 62px;
+}
+
+section {
+    text-align: center;
+    font-size: 125%;
+    position: absolute;
+    right: 0;
+    width: max-content;
+    border-top: 0;
+    border-right: 0;
+}
+
+p {
+    padding: 10px 0 0 0;
+}
+
+#chicken {
+    background-color: darkgoldenrod;
+}
+
+#chicken > section {
+    background-color: gold;
+}
+
+#beef {
+    background-color: saddlebrown;
+}
+
+#beef > section {
+    background-color: sandybrown;
+}
+
+#sushi {
+    background-color: dodgerblue;
+}
+
+#sushi > section {
+    background-color: deepskyblue;
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        width: 33%;
+        float: left;
+        margin-right: 10px;
+    }
+
+    #sushi {
+        width: 32%;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        width: 50%;
+        float: left;
+        margin: 0 0 10px 0;
+    }
+
+    #beef {
+        width: 48%;
+        float: right;
+        margin: 0 0 0 10px;
+    }
+
+    .col-md-12 {
+        width: 100%;
+        clear: left;
+    }
+}
+
+@media (max-width: 767px) {
+    .col-sm-12 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
